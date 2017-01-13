@@ -1,7 +1,8 @@
 ---
 layout: default
 title: First post!
-date: 2017-01-12 20:50:00 -0400
+date: '2017-01-12 20:50:00 -0400'
+published: true
 ---
 ## This is it
 
@@ -49,13 +50,13 @@ first lets try to include and highlight it
 
 now lets try to include and run it
 
-  <script type="text/javascript" charset="utf-8">
-    $(document).ready(function(){
-      $("#submit").click(function(e){
-        {% include alert_msg.js %}
-        return false;
-      })
-    });
-  </script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("#submit").click(function(e){
+      {% include alert_msg.js %}
+      return false;
+    })
+  });
+</script>
   
 howd we do?
