@@ -1,3 +1,8 @@
+---
+layout: default
+title: Tucker Sylvia dot com
+---
+
 # Welcome!
 
 You have arrived to the personal website of Tucker Sylvia.
