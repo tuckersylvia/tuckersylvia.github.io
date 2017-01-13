@@ -38,4 +38,22 @@ plt.scatter(x,y)
 
 {% endhighlight %}
 
-and the verdict is...
+and the verdict is... it worked!
+
+Now lets try to see if we can execute js:
+first lets try to include and highlight it
+
+{% highlight javascript %}
+{% include alert_msg.js %}
+{% endhighlight %}
+
+now lets try to include and run it
+
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("#submit").click(function(e){
+        {% include alert_msg.js %}
+        return false;
+      })
+    });
+  </script>
