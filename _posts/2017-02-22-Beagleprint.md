@@ -1,15 +1,15 @@
 ---
 published: false
 ---
-Beagleprint
-===========
+##Beagleprint
+
 
 Well, here is going to be my first shot at a bonafide blog post. I have decided that the main purpose of this blog will be to document little side projects I complete and problems I manage to solve at home, work, hobbying, and in general. Many of the posts will probably come out as just a culmination of links and research that I have done, but for me that provides a convenient place to go back and find resources without digging through my gargantuan pile of semi-organized bookmarks.
 
 So, without further ado, I will now present you with a description and guide to how I set up my new 3D printer and an Octorpint server running on a Beaglebone black to control it over the network.
 
-3D Printer and Configuration:
------------------------------
+###3D Printer and Configuration:
+
 
 I really wanted a 3D printer for Christmas, and thanks to the Amazon gift card gods and many generous donations gifts from family and friends I was able to purchase a Monoprice Maker Select v2.1 (I think, versions are sketchy when dealing with rebranded Chinese stuff. This is a rebranded Wanhao Duplicator i3). I decided on this model because it has all the relevant features, a large community for support and advice, and an unbeatable price at $330.
 
@@ -27,7 +27,7 @@ After you burn through the included "10 m" (more like 10 ft) of filament you wil
 
 You will want some extra tools too, namely a little level to check all your guide rods and frame alignment (and the table the printer is on... mine was horribly off kilter and I had to compensate with some cedar shingle wedges on the two fron feet), Xacto knife, CA glue, zip ties, acetone, rubbing alcohol, and certainly some metric hex drivers. I have found that the plastic build surface is sticky enough for both PLA and ABS as long as wou wipe it with isopropyl first to remove any grease or residue.
 
-octoprint config
+###Octoprint config
 
 getting in from the internet
 
