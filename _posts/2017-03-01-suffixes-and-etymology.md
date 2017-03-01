@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Suffixes and Etymology of Scientific Disciplines
 ### Learn Something New Everyday!
