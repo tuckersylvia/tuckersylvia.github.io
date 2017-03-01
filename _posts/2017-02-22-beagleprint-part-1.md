@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-#Beagleprint
+# Beagleprint
 ## Because hacking is fun, and I will look for any excuse to avoid my thesis during a snow storm
 
 Well, here is going to be my first shot at a bonafide blog post. I have decided that the main purpose of this blog will be to document little side projects I complete and problems I manage to solve at home, work, hobbying, and in general. Many of the posts will probably come out as just a culmination of links and research that I have done, but for me that provides a convenient place to go back and find resources without digging through my gargantuan pile of semi-organized bookmarks.
@@ -29,4 +29,3 @@ You will want some extra tools too, namely a little level to check all your guid
 I later found out that prints can adhere *too* well to the bed, especially ABS at high temperatures, and they may or may not bond together completely. This will result in you having to tear off all that build surface and get the adhesive underneath off too... and this task my friends is a 100% guaranteed total pain in the ass or your money back. You may find that if this happens to you that after you get all of the old build surface and glue off of the aluminum bed that now is probably the best time to order yourself a borosilicate bed and silicone thermal pad because you certainly do not want to struggle with that shit ever again. For anyone who is looking to remove that helacious goop from their aluminum bed, I tried isopropyl, acetone, and Goo Gone with varying degrees of success. Goo Gone with the bed turned to ~68C worked best. If you get the bed too hot the glue actually bonds better and becomes even more difficult to remove. Don't use any metallic scrapers (like the one supplied with the kit that you already tried) because it will gouge the shit out of the aluminum bed (steel > aluminum, thanks Mohs). I used an old gift card to scrape / roll / drag the glue off after letting the Goo Gone set for a few minutes while the bed heated. It took a while and was frustrating but it does all eventually come off.
 
 ##Stay Tuned for [Part 2: Octoprint Configuration](link to part 2 here)
-
