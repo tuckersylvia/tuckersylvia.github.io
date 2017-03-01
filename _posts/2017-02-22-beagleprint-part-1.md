@@ -8,7 +8,7 @@ Well, here is going to be my first shot at a bonafide blog post. I have decided 
 
 So, without further ado, I will now present you with a description and guide to how I set up my new 3D printer and an Octorpint server running on a Beaglebone Black to control it over the network. This is probably going to turn out very lengthy so I will break it up as makes sense with the content and my time. 
 
-###3D Printer Choice and Initial Setup / Configuration:
+### 3D Printer Choice and Initial Setup / Configuration:
 
 I really wanted a 3D printer for Christmas, and thanks to the Amazon gift card gods and many generous ~~donations~~ gifts from family and friends I was able to purchase a Monoprice Maker Select v2.1 (I think, versions are sketchy when dealing with rebranded Chinese stuff. This is a rebranded Wanhao Duplicator i3). I decided on this model because it has all the relevant features, a large community for support and advice, and an unbeatable price at **$330**.
 
@@ -28,4 +28,4 @@ You will want some extra tools too, namely a little level to check all your guid
 
 I later found out that prints can adhere *too* well to the bed, especially ABS at high temperatures, and they may or may not bond together completely. This will result in you having to tear off all that build surface and get the adhesive underneath off too... and this task my friends is a 100% guaranteed total pain in the ass or your money back. You may find that if this happens to you that after you get all of the old build surface and glue off of the aluminum bed that now is probably the best time to order yourself a borosilicate bed and silicone thermal pad because you certainly do not want to struggle with that shit ever again. For anyone who is looking to remove that helacious goop from their aluminum bed, I tried isopropyl, acetone, and Goo Gone with varying degrees of success. Goo Gone with the bed turned to ~68C worked best. If you get the bed too hot the glue actually bonds better and becomes even more difficult to remove. Don't use any metallic scrapers (like the one supplied with the kit that you already tried) because it will gouge the shit out of the aluminum bed (steel > aluminum, thanks Mohs). I used an old gift card to scrape / roll / drag the glue off after letting the Goo Gone set for a few minutes while the bed heated. It took a while and was frustrating but it does all eventually come off.
 
-##Stay Tuned for [Part 2: Octoprint Configuration](link to part 2 here)
+## Stay Tuned for [Part 2: Octoprint Configuration](link to part 2 here)
