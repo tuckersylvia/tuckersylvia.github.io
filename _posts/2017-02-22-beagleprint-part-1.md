@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 #Beagleprint
 ## Because hacking is fun, and I will look for any excuse to avoid my thesis during a snow storm
