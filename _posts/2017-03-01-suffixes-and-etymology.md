@@ -31,9 +31,9 @@ I am now going to try to "conjugate" *geo-* with as many suffixes as I can and s
 * Geometric - earth measure?
 * Geometrics - study of earth measures?
 
-Shit is broken.
+Shit is obviously broken.
 
-There are also a whole suite of subdisciplinies, even within the earth sciences, that do not adhere to the guidelines, for example lithostratigraphy, oceanography, oceanology, hydrography, hydrology, etc. I am not sure if I am any less confused, but there do seem to be some loose definitions as to which suffix properly belongs to each discipline. The problem now appears to be that people have latched on to the improper suffix for many disciplines and we just have to roll with it, *e.g.* astr*onomy* and astr*ology* are seemingly reversed. Medical subdisciplines also seem to have some variance from the "right" way, but whatever, I have now have wasted half an hour reading and writing about this so I will surely never forget...
+There are also a whole suite of subdisciplinies, even within the earth sciences, that do not adhere to the guidelines, for example lithostratigraphy, oceanography, oceanology, hydrography, hydrology, etc. I am not sure if I am any less confused, but there do seem to be some loose definitions as to which suffix properly belongs to each discipline. The problem now appears to be that people have latched on to the improper suffix for many disciplines and we just have to roll with it, *e.g.* astr*onomy* and astr*ology* are seemingly reversed. Medical subdisciplines also seem to have some variance from the "right" way. Whatever, I have now have wasted at least half an hour reading and writing about this so I will surely never forget...
 
 Cheers,
 -Tucker
