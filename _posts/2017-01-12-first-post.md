@@ -3,9 +3,9 @@ layout: post
 title: First post!
 date: '2017-01-12 20:50:00 -0400'
 published: true
+author: Tucker Sylvia
 ---
-## This is it
-### first post is here, checking excerpt 
+### First post is here, checking excerpt
 
 Well it seems that this would be thw way to test the blogging functionality of Jekyll ang GitHub Pages...
 
@@ -59,5 +59,5 @@ now lets try to include and run it
     })
   });
 </script>
-  
+
 howd we do?

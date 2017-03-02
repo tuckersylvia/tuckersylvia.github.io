@@ -3,7 +3,7 @@
   {{ page.content | number_of_words | minus: 250 }}
 {% endcapture %}
 {% unless words contains "-" %}
-  {{ words | plus: 250 | append: " words" }}
+  {{ words | plus: 250 | append: " words, approx." }}
   {{ words | plus: 250 | divided_by: 180 | append: " minute read" }}
 {% endunless %}
 </span>

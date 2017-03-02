@@ -1,24 +1,25 @@
 ---
 layout: post
 title: Beagleprint Part 1
+date: '2017-02-22 20:50:00 -0400'
+author: Tucker Sylvia
 published: true
 ---
-## Beagleprint
 ### Because hacking is fun, and I will look for any excuse to avoid my thesis during a snow storm
 
-#### *How to bend modern technology to perform exceptionally.* 
+#### *How to bend modern technology to perform exceptionally.*
 
 ### Preface
-Well, here will reside my first attempt at a bonafide blog post. 
+Well, here will reside my first attempt at a bonafide blog post.
 
-I have decided that the main purpose of this site will be to document little side projects I complete and problems I manage to solve at home, work, hobbying, and in general. 
+I have decided that the main purpose of this site will be to document little side projects I complete and problems I manage to solve at home, work, hobbying, and in general.
 
 Many of the posts will probably come out merely as a culmination of links and research that I have done and mashed toegether. For me that provides a convenient place to go back and find resources without digging through my gargantuan pile of semi-organized bookmarks.
 
-I will almost certainly not implement commenting because I do not write this to solicit an opinion. I also do not claim in any way to be an authority on any topic(s); In fact **I am purely a hoobyist who utilizes these freely available tools and resources only to further my own knowledge. If you do find my writing useful please cite me appropriately.** 
+I will almost certainly not implement commenting because I do not write this to solicit an opinion. I also do not claim in any way to be an authority on any topic(s); In fact **I am purely a hoobyist who utilizes these freely available tools and resources only to further my own knowledge. If you do find my writing useful please cite me appropriately.**
 
 ### Getting to it
-So, without further ado, I will now present you with a description and guide as to how I set up my new 3D printer and an Octorpint server running on a Beaglebone Black to control it over the network. This is probably going to turn out more lengthy than I intend so I will break it up as is commensurate with the content and my time. 
+So, without further ado, I will now present you with a description and guide as to how I set up my new 3D printer and an Octorpint server running on a Beaglebone Black to control it over the network. This is probably going to turn out more lengthy than I intend so I will break it up as is commensurate with the content and my time.
 
 ### 3D Printer Choice and Initial Setup / Configuration:
 
@@ -38,12 +39,12 @@ Speaking of **filament**, I bought and will continue to buy mine from **MakerGee
 When the magic man in the brown truck delivers your printer you open the box (right side up... trust me) and the unit comes in three pieces that are fully wired together. This means you have to take some care to get it all unpacked and oriented correctly. Simple instructions (could be a little more descriptive) show you where to insert something like four screws and then you're off. Pry the factory test print off the bed, level the bed, and print away with one of the four models that come preloaded on the supplied SD card (which is not total and utter crap surprisingly). The files on my card were numbered, but there's a flat butterfly, a baby elephant, a cushy chair, and a swan, *I think in that order, your milage may vary*. There is also a PDF manual and an old 15.x EXE version of Cura with the Wanhao profile already setup on the card. I did not use the supplied slicing software because I run Linux on everything. I found a downloadable INI with the stock Wanhao Cura settings somewhere but I ended up creating my own profile from scratch after some trial and error.
 
 #### Firmware (to be continued)
-My main issue turned out to be that the acceleration and jerk are tuned way too high in the factory firmware settings in an attempt to show off how fast this machine can print, to the detriment of print quality. The test prints all print well and at decent speed wiht the supplied profile but I was less successful when trying to print my own designs or things I downloaded from Thingiverse and elsewhere. 
+My main issue turned out to be that the acceleration and jerk are tuned way too high in the factory firmware settings in an attempt to show off how fast this machine can print, to the detriment of print quality. The test prints all print well and at decent speed wiht the supplied profile but I was less successful when trying to print my own designs or things I downloaded from Thingiverse and elsewhere.
 
 After you burn through the included "10 m" (more like 10 ft) of filament you will inevitably have some work to do. This is where all that great community documentation comes in. I have found [this](http://3dprinterwiki.info/wiki/wanhao-duplicator-i3/) to be the best starting point for this printer. You will most certainly want to print up some parts to beef up the rigidity of the frame. I have not printed the Z braces as of yet because I want to do them in ABS and have not gotten all the settings down for good ABS prints yet.  
 
 #### Tools
-You will want some extra tools too, namely a small keychain level to check all your guide rods and frame alignment (and the table the printer is on... my table is horribly off kilter and I had to compensate with some cedar shingle wedges on the two front feet), Xacto knife, CA glue, zip ties, acetone, rubbing alcohol, and certainly some metric hex drivers to supplement those included. I have found that the knockoff BuildTak build surface is sticky enough for both PLA and ABS as long as wou wipe it with isopropyl first to remove any grease or residue. 
+You will want some extra tools too, namely a small keychain level to check all your guide rods and frame alignment (and the table the printer is on... my table is horribly off kilter and I had to compensate with some cedar shingle wedges on the two front feet), Xacto knife, CA glue, zip ties, acetone, rubbing alcohol, and certainly some metric hex drivers to supplement those included. I have found that the knockoff BuildTak build surface is sticky enough for both PLA and ABS as long as wou wipe it with isopropyl first to remove any grease or residue.
 
 ### Little Issues
 #### Stock Cooler

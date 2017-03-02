@@ -1,16 +1,28 @@
 # site settings
-title: tuckersylvia.com
+title: Proceptive Insights
 author: Tucker Sylvia
-description: "My personnal space on the web"
+email: proception@gmail.com
+description: > # this means ignore new lines until the next definition
+  My personnal space on the web to blog about problems I solve and other
+  tidbits worth sharing.
+baseurl: ""
+url: "http://tuckersylvia.com"
+github_username: tuckersylvia
+twitter_username: pr0ception
 
 theme: jekyll-theme-midnight
 
 # build settings
 port: 4000
-highlighter: rouge # rouge not rogue 
+highlighter: rouge # rouge not rogue
 # apparently github pages doesnt like pygments as the highlighter
 # I might start building locally and pushing to the repo especially if I start using other plugins etc.
 markdown: kramdown
-# again the github pages builder complained, about redcarpet this time, 
+# again the github pages builder complained, about redcarpet this time,
 # once again making me think building locally is a better option
 permalink: pretty
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
