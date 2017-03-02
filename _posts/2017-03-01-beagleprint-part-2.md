@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Beagleprint Part 2
 published: false
 ---
 
