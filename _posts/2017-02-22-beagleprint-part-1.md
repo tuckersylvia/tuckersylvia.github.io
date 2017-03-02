@@ -1,6 +1,10 @@
 ---
 published: true
 ---
+---
+layout: post
+title: Beagleprint Part 1
+---
 ## Beagleprint
 ### Because hacking is fun, and I will look for any excuse to avoid my thesis during a snow storm
 
