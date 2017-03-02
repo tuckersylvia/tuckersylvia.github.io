@@ -1,12 +1,8 @@
 ---
-layout: default
+layout: post
 title: First post!
 date: '2017-01-12 20:50:00 -0400'
 published: true
----
----
-layout: post
-title: First Post
 ---
 ## This is it
 ### first post is here, checking excerpt 
