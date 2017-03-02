@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Etymology of Suffixes
 published: true
 ---
 ## Suffixes and Etymology of Scientific Disciplines
