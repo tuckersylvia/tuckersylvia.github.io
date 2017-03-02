@@ -1,1 +1,12 @@
+# site settings
+title: tuckersylvia.com
+author: Tucker Sylvia
+description: "My personnal space on the web"
+
 theme: jekyll-theme-midnight
+
+# build settings
+port: 4000
+highlighter: pygments
+markdown: redcarpet
+permalink: pretty
