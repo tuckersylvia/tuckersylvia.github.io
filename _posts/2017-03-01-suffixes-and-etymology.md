@@ -1,10 +1,11 @@
 ---
 published: true
 ---
-# Suffixes and Etymology of Scientific Disciplines
+## Suffixes and Etymology of Scientific Disciplines
+
 ### Learn Something New Everyday!
 
-So my little tidbit for today will be about a random bit of knowledge I picked up while doing some more thesis work.
+So my little tidbit for today will be about a random piece of knowledge I picked up while doing some more thesis work.
 
 I am technically a geologist by training, and for some reason the etymology of the word geology has always been explained to me in one way that until now I never questioned: it is the combination of *geo* and *logos*. Now this seemed all well and good to me because those old greek words have relatively solid definitions (although my perspective on solids and fluids may be a bit skewed, but we will save that for another day). To me *Geo-* means of the earth, and *-logos* or *-logia* means study of.
 
