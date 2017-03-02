@@ -10,5 +10,7 @@ port: 4000
 highlighter: rogue 
 # apparently github pages doesnt like pygments as the highlighter
 # I might start building locally and pushing to the repo especially if I start using other plugins etc.
-markdown: redcarpet
+markdown: kramdown
+# again the github pages builder complained, about redcarpet this time, 
+# once again making me think building locally is a better option
 permalink: pretty
