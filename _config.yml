@@ -7,7 +7,7 @@ theme: jekyll-theme-midnight
 
 # build settings
 port: 4000
-highlighter: rogue 
+highlighter: rouge # rouge not rogue 
 # apparently github pages doesnt like pygments as the highlighter
 # I might start building locally and pushing to the repo especially if I start using other plugins etc.
 markdown: kramdown
