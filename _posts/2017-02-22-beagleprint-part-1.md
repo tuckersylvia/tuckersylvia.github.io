@@ -59,8 +59,8 @@ One of the first "mods" I did was reinforcing the Y axis pulley. To accomplish t
 Most of the pictures you see online have the spool holder mounted atop the X/Z Gantry. This is not the place to put it. If you have any wobble in the frame it will only be accentuated by putting a kilo of plastic way up there and moving the center of mass so high. Mount the spool holder on the control box and use something to guide it to the extruder smoothly (I obviously used more zip ties). Also print a new spool holder ([I used this one](http://www.thingiverse.com/thing:1889438)) when you get a chance if the stock one does not fit well, having a smooth rolling action helps make the extruder fight less and makes everything work easier
 
 ### It's The End
-I am fairly certain that Is most of the hardware things I had to get out there. There will be some remarks on the placement and setup of the ARM server in the next post but most of that depends on personnal setup and goals. See y'all soon. Maybe?
+I am fairly certain that was most of the hardware stuff I had to get out there. There will be some remarks on the placement and setup of the ARM server in the next post but most of that depends on personnal setup and goals. See y'all soon. Maybe?
 
 ## Stay Tuned for [Part 2: Octoprint Configuration](link to part 2 here)
 
-*these pages are (for now) in a constant state of adjustment while I get used to this platform, so if something seems different or rearranged it probably is.
+*these pages are (for now) in a constant state of adjustment while I get used to this platform, so if something seems different or rearranged, it probably is.*
