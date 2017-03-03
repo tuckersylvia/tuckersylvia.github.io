@@ -4,6 +4,8 @@ title: Etymology of Suffixes
 date: '2017-03-01 23:50:00 -0400'
 author: Tucker Sylvia
 published: true
+tags: [writing, random, etymology]
+
 ---
 
 ### Learn Something New Everyday!

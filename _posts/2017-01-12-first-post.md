@@ -4,6 +4,7 @@ title: First post!
 date: '2017-01-12 20:50:00 -0400'
 published: true
 author: Tucker Sylvia
+tags: [testing, jekyll]
 ---
 ### First post is here, checking excerpt
 
