@@ -20,11 +20,11 @@ highlighter: rouge # rouge not rogue
 # apparently github pages doesnt like pygments as the highlighter
 # I might start building locally and pushing to the repo especially if I start using other plugins etc.
 markdown: kramdown
-# again the github pages builder complained, about redcarpet this time,
-# once again making me think building locally is a better option
+# again the github pages builder complained, but about redcarpet this time.
+# once again making me think building locally is a better option... IT IS!
 permalink: pretty
-sass:
-  sass_dir: _sass
+#sass:
+#  sass_dir: _sass
 include: ['_pages']
 kramdown:
   input: GFM
