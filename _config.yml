@@ -10,6 +10,8 @@ url: "http://tuckersylvia.com"
 github_username: tuckersylvia
 twitter_username: pr0ception
 
+repository: tuckersylvia/tuckersylvia.github.io
+
 theme: jekyll-theme-midnight
 
 # build settings
