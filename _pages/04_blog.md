@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /blog/
+title: Blog Posts
 ---
 ## Blog Posts:
 
