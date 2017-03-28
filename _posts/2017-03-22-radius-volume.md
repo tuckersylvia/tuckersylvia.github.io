@@ -4,18 +4,12 @@ title: Radius Volume Relationships of Spheres
 date: '2017-03-22 23:50:00 -0400'
 author: Tucker Sylvia
 published: true
+mathjax: true
 tags: [math, random, Stokes, physics, scaling, science]
 
 ---
-{% raw %}
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-{% endraw %}
 
 ### Reminder: You should still be learning something new everyday!
-
-## Radius and Volume Relationships of Spheres
 
 So I had a fairly simple question while writing my thesis the other day. I was writing about Stokes rise and buoyant settling / ascent of spherical bodies in a viscous fluid. I wanted to know what the change in terminal velocity was if you doubled the spheres volume keeping all other parameters (density contrast, ambient viscosity) constant. Below I will show you the simple relationships and assumptions I used to get an estimate for this quantity. Along the way we will touch on what I think has been the most valuable skill I have learned in my time at graduate school: **estimation and back of the envelope calculations**.
 

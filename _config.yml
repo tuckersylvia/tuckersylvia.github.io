@@ -28,3 +28,13 @@ permalink: pretty
 include: ['_pages']
 kramdown:
   input: GFM
+
+defaults:
+  -
+    scope:
+      path: "/_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      published: false
+      mathjax: false
