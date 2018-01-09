@@ -1,11 +1,13 @@
 ---
-layout: post
 title: First post!
-date: '2017-01-12 20:50:00 -0400'
-published: true
+date: 2017-01-13 00:50:00 Z
+tags:
+- testing
+- jekyll
+layout: post
 author: Tucker Sylvia
-tags: [testing, jekyll]
 ---
+
 ### First post is here, checking excerpt
 
 Well it seems that this would be thw way to test the blogging functionality of Jekyll ang GitHub Pages...

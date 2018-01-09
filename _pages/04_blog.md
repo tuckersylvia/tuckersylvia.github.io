@@ -1,8 +1,9 @@
 ---
-layout: default
-permalink: /blog/
 title: Blog Posts
+permalink: "/blog/"
+layout: default
 ---
+
 ## Blog Posts:
 
 {% include post_list.html%}

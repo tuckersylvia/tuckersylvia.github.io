@@ -1,11 +1,16 @@
 ---
-layout: post
 title: Beagleprint Part 1
-date: '2017-02-22 20:50:00 -0400'
+date: 2017-02-23 00:50:00 Z
+tags:
+- 3dprinting
+- beaglebone
+- octoprint
+- hardware
+- hobby
+layout: post
 author: Tucker Sylvia
-published: true
-tags: [3dprinting, beaglebone, octoprint, hardware, hobby]
 ---
+
 ### Because hacking is fun, and I will look for any excuse to avoid my thesis during a snow storm
 
 #### *How to bend modern technology to perform exceptionally.*

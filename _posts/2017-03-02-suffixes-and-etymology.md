@@ -1,11 +1,12 @@
 ---
-layout: post
 title: Etymology of Suffixes
-date: '2017-03-01 23:50:00 -0400'
+date: 2017-03-02 03:50:00 Z
+tags:
+- writing
+- random
+- etymology
+layout: post
 author: Tucker Sylvia
-published: true
-tags: [writing, random, etymology]
-
 ---
 
 ### Learn Something New Everyday!

@@ -1,11 +1,17 @@
 ---
-layout: post
 title: Beagleprint Part 2
-date: '2017-03-01 20:50:00 -0400'
-author: Tucker Sylvia
+date: 2017-03-02 00:50:00 Z
 published: false
-tags: [3dprinting, beaglebone, octoprint, server, software, linux, hobby]
-
+tags:
+- 3dprinting
+- beaglebone
+- octoprint
+- server
+- software
+- linux
+- hobby
+layout: post
+author: Tucker Sylvia
 ---
 
 ### Because one must have network control...

@@ -1,11 +1,14 @@
 ---
-layout: post
 title: Radius Volume Relationships of Spheres
-date: '2017-03-22 23:50:00 -0400'
-author: Tucker Sylvia
+date: 2017-03-23 03:50:00 Z
 published: false
+layout: post
+author: Tucker Sylvia
 mathjax: false
-tags: [descriptive, tags, here]
+tags:
+- descriptive
+- tags
+- here
 ---
 
 ### Reminder: Learn Something New Everyday!

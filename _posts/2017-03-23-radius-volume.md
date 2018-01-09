@@ -1,12 +1,16 @@
 ---
-layout: post
 title: Radius Volume Relationships of Spheres
-date: '2017-03-22 23:50:00 -0400'
+date: 2017-03-23 03:50:00 Z
+tags:
+- math
+- random
+- Stokes
+- physics
+- scaling
+- science
+layout: post
 author: Tucker Sylvia
-published: true
 mathjax: true
-tags: [math, random, Stokes, physics, scaling, science]
-
 ---
 
 ### Reminder: You should still be learning something new everyday!

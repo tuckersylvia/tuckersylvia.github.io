@@ -1,8 +1,9 @@
 ---
-layout: page
 title: Contact
-permalink: /contact/
+permalink: "/contact/"
+layout: page
 ---
+
 ### Contact Me
 
 You can reach me by email at: proception [at] gmail [dot] com

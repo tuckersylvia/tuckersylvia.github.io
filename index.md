@@ -1,8 +1,7 @@
 ---
-layout: default
 title: Home
-published: true
-permalink: /
+permalink: "/"
+layout: default
 ---
 
 # Greetings Earthling!

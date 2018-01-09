@@ -1,8 +1,9 @@
 ---
-layout: page
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: page
 ---
+
 ### About Me
 
 I am a currently masters student at the University of Rhode Island [Graduate School of Oceanography](http://www.gso.uri.edu). I primarily study subduction zone geodynamics using analogue laboratory models and computer vision with [Chris Kincaid](http://www.gso.uri.edu/profile/kincaid/). Our lab group does all sorts of fluid dynamical stuff ranging from mantle convection to shellfish larval transport in Narragansett Bay using integrated data and modeling methods.
