@@ -22,7 +22,7 @@ description: 'My personnal space on the web to blog about problems I solve and o
   tidbits worth sharing.
 
 '
-baseurl: 
+baseurl:
 url: http://tuckersylvia.com
 github_username: tuckersylvia
 twitter_username: pr0ception
@@ -36,3 +36,6 @@ include:
 - _pages
 kramdown:
   input: GFM
+
+plugins:
+  - jekyll-admin

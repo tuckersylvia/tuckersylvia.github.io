@@ -1,6 +1,7 @@
 ---
 title: First post!
 date: 2017-01-13 00:50:00 Z
+published: true
 tags:
 - testing
 - jekyll

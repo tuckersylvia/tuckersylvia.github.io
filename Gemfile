@@ -9,3 +9,5 @@ gem 'github-pages', versions['github-pages']
 gem 'jekyll-watch'
 
 gem 'jekyll-theme-midnight'
+
+gem 'jekyll-admin'
