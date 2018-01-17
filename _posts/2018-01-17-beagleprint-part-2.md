@@ -1,7 +1,6 @@
 ---
 title: Beagleprint Part 2
-date: '2018-01-17 19:50:00'
-published: true
+date: 2018-01-17 19:50:00 Z
 tags:
 - 3dprinting
 - beaglebone
