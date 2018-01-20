@@ -19,13 +19,15 @@ author: Tucker Sylvia
 
 Nearly a year later, here is the second post in the 3d printer - Beaglebone - Octoprint saga.
 
-I hope to cover all of the software stuff here because I feel that most of the relevant hardware info was covered in [Part1](/2017/02/23/beagleprint-part-1/).
+I hope to cover all of the software stuff here because I feel that most of the relevant hardware info was covered in [Part1]({% post_url 2017-02-22-beagleprint-part-1 %}).
+
+{% include image.html name="beagle-box.JPG" caption="Beaglebone (in the altoids tin) with my switchable 4-port USB hub, serial cable, and the printer control box." alt="Beaglebone and printer control box" width="100%" %}
 
 ### Non Printer Hardware
 
-The Duplicator i3 runs a Melzi board with a Repetier based firmware. Octoprint picks it up no problem over USB/TTY with a reasonably modern kernel. 
+The Duplicator i3 runs a Melzi board with a Repetier based firmware. Octoprint picks it up no problem over USB/TTY with a reasonably modern kernel.
 
-I have had issues with USB connectivity though, and tried many different cables, long and short, and have had the best luck with one that has extra shielding. It sould be an issue with my cheap 4-port USB hub, but I'm not sure. If you suffer random serial dissconnects mid-print it is likely a cable issue. The worst part about this is that the printer hangs after the last move / command received and does not cool down which can be a dangerous situation. I wish there was functionality within Octoprint to automagically try to reconnect to the printer and kill the hotend and bed after a catastrophic communication issue but am not sure this exists yet. 
+I have had issues with USB connectivity though, and tried many different cables, long and short, and have had the best luck with one that has extra shielding. It sould be an issue with my cheap 4-port USB hub, but I'm not sure. If you suffer random serial dissconnects mid-print it is likely a cable issue. The worst part about this is that the printer hangs after the last move / command received and does not cool down which can be a dangerous situation. I wish there was functionality within Octoprint to automagically try to reconnect to the printer and kill the hotend and bed after a catastrophic communication issue but am not sure this exists yet.
 
 ### Beaglebone Black prep
 
@@ -57,18 +59,20 @@ Once you get a reasonable server up the Octoprint setup is easy. I mostly follow
 #### Webcam
 Same as [here](https://github.com/foosel/OctoPrint/wiki/Setup-on-a-Raspberry-Pi-running-Raspbian#webcam) following instructions for Jessie.
 
+{% include image.html name="webcam.JPG" caption="Close up of the build volume, plate, cooler, and webcam facing towrads us in the negative Y direction." alt="Close up of build plate and webcam" width="100%" %}
+
 #### Other plugins
-I added a few plugins, there are a binch of good ones available. Some I have added are cost, curaengine, detailed progress, discovery, display progress, eeprom repetier editor, printer stats, filemanager, fullscreen webcam, printer stats, and terminal commands. Lots of great functionality for whatever you want or need. 
+I added a few plugins, there are a binch of good ones available. Some I have added are cost, curaengine, detailed progress, discovery, display progress, eeprom repetier editor, printer stats, filemanager, fullscreen webcam, printer stats, and terminal commands. Lots of great functionality for whatever you want or need.
 
 #### Success!
 
-Now you have a nice low powered ARM server (or whatever) connected to your 3d printer over USB serial and a webcam to watch the whole process. This is great because you can fully control the printer and  check on prints from within your home network without having to utilize the infamous [*sneakernet*](https://en.wikipedia.org/wiki/Sneakernet). 
+Now you have a nice low powered ARM server (or whatever) connected to your 3d printer over USB serial and a webcam to watch the whole process. This is great because you can fully control the printer and  check on prints from within your home network without having to utilize the infamous [*sneakernet*](https://en.wikipedia.org/wiki/Sneakernet).
 
 ### Getting in from the internet
 
 #### SSH tunneling and forwarding with a hop
 
-You have options here. I have a computer setup with an **SSH** server running on an obscure port that I forward through my main gateway router because I am a nerd and like to be able to SSH into a machine on my local network if I need to. The reason for not using port 22 is that instead of relying on fail2ban or iptables rules to mitigate the absurd amount of bad login attempts you end up with on 22 those banket attempts never even happen because most bots are not actively probing all ports on potential hosts. 
+You have options here. I have a computer setup with an **SSH** server running on an obscure port that I forward through my main gateway router because I am a nerd and like to be able to SSH into a machine on my local network if I need to. The reason for not using port 22 is that instead of relying on fail2ban or iptables rules to mitigate the absurd amount of bad login attempts you end up with on 22 those banket attempts never even happen because most bots are not actively probing all ports on potential hosts.
 
 With this setup I can forward the Octoprint webserver over a secure tunnel with a single hop from wherever. I like this because it is free and not too complicated. The command I use looks something like this saved into script:
 ~~~
@@ -78,7 +82,7 @@ This forwards the Octoprint server running on 5000 (default) to local port 9999,
 
 #### Alternatives
 
-There is another new solution in the form of an [Octopi plugin](https://plugins.octoprint.org/plugins/astroprint/) that interfaces with [AstroPrint Cloud](https://www.astroprint.com/products/p/astroprint-cloud) that seems intriguing but I kind of like having control over my own stuff. A common theme for me is spending* lots* of time cobbling together a free solution to avoid messing with third party cloud services. There is another project called AstroPi that may be involved with app that somehow. 
+There is another new solution in the form of an [Octoprint plugin](https://plugins.octoprint.org/plugins/astroprint/) that interfaces with [AstroPrint Cloud](https://www.astroprint.com/products/p/astroprint-cloud) that seems intriguing but I kind of like having control over my own stuff. A common theme for me is spending* lots* of time cobbling together a free solution to avoid messing with third party cloud services. There is another project called AstroPi that may be involved with that app somehow.
 
 ### The end
 

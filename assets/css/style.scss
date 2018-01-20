@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+/*
+* override behaviors fromt he theme css
+*/
+
+/*
+* change color and outline of active links
+*/
+a:active {
+  color: #6fe01f;
+  outline: dotted; }

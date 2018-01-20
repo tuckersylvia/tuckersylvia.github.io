@@ -65,3 +65,9 @@ now lets try to include and run it
 </script>
 
 howd we do?
+
+testing new page timestamp features:
+
+method 1) {{ page.last_modified_at | date: '%B %d, %Y' }}
+method 2) {{ page.last-modified-date | date: '%B %d, %Y' }}
+method 3) {{ page.last_modified }}

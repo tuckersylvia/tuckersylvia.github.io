@@ -1,6 +1,6 @@
 ---
 title: Proceptive Insights
-timezone: UTC
+timezone: America/New_York
 collections:
   posts:
     title: Posts
@@ -39,3 +39,6 @@ kramdown:
 
 plugins:
   - jekyll-admin
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+#  - jekyll-responsive-image
