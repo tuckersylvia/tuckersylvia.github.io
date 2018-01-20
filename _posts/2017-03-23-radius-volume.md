@@ -1,7 +1,6 @@
 ---
 title: Radius Volume Relationships of Spheres
 date: 2017-03-23 03:50:00 Z
-published: true
 tags:
 - math
 - random

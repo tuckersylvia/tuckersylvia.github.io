@@ -36,7 +36,6 @@ include:
 - _pages
 kramdown:
   input: GFM
-
 plugins:
   - jekyll-admin
   - jekyll-last-modified-at
