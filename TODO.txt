@@ -1,0 +1,65 @@
+# TODO.txt
+# todo list for website crap
+##################
+# Infrastructure
+# things to fix/build
+##################
+
+# pages
+resume/cv page
+projects page
+404
+
+# about
+better social on about page
+add linkdin
+reserachgate?
+
+# blog
+build a blog page by date
+build a blog page by tags
+
+# nav
+make blog pages sub-pages of blog in nav bar
+add sub-pages to nav bar
+
+# header /footer
+meta tags header
+social footer
+header images
+floating / permanent header
+
+
+# post layout
+blog tags in post layout, nicely styled
+social share
+
+# standardization
+favicon.ico
+sitemap.xml
+robots.txt
+security.txt
+rss feed.xml
+
+# maintenence
+run trimage
+
+#########
+# POSTS
+# posts to write
+#########
+blob track
+subduction apparatus
+RZR
+openptv?
+3d printed something / fix
+saab fix
+2dheatpy
+educational passages
+sailng something
+writing
+oped on something
+python game agent project
+new projector
+build something
+kenz wave ring
