@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
-  {% include head.html %}}
+
+  {% include head.html %}
+  
   <body>
 
-    <div class="wrapper">
+    {% include navigation.html %}
 
-      {% include navigation.html %}
+    <div class="wrapper">
 
       {% if page.title == "Home" %}
       <section>
@@ -14,6 +16,7 @@
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
         </div>
+      </section>
       {% endif%}
 
       {{ content }}

@@ -1,14 +1,17 @@
 ---
 title: Beagleprint Part 1
 date: 2017-02-22 19:50:00 -05:00
+published: true
+layout: post
+author: Tucker Sylvia
+mathjax: false
+description: "Intro to interfacing a 3d printer with Octoprint on a Beaglebone Black"
 tags:
 - 3dprinting
 - beaglebone
 - octoprint
 - hardware
 - hobby
-layout: post
-author: Tucker Sylvia
 ---
 
 ### Because hacking is fun, and I will look for any excuse to avoid my thesis during a snow storm

@@ -1,6 +1,7 @@
 ---
 title: Proceptive Insights
 timezone: America/New_York
+
 collections:
   posts:
     title: Posts
@@ -10,33 +11,43 @@ collections:
     output: true
 defaults:
 - scope:
-    path: "/_posts"
+    path: "_posts"
     type: posts
   values:
     layout: post
-    published: false
+    published: true
     mathjax: false
+    author: Tucker Sylvia
+
 author: Tucker Sylvia
 email: proception@gmail.com
 description: 'My personnal space on the web to blog about problems I solve and other
-  tidbits worth sharing.
+  tidbits worth sharing.'
 
-'
-baseurl: 
+baseurl: ''
 url: http://tuckersylvia.com
 github_username: tuckersylvia
 twitter_username: pr0ception
+
 repository: tuckersylvia/tuckersylvia.github.io
 theme: jekyll-theme-midnight
 port: 4000
+
 highlighter: rouge
 markdown: kramdown
 permalink: pretty
+
 include:
 - _pages
+
+exclude:
+- TODO.txt
+
+keep_files:
+
+
 kramdown:
   input: GFM
+
 plugins:
-- jekyll-admin
-- jekyll-last-modified-at
 - jekyll-sitemap

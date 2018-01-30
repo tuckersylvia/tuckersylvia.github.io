@@ -1,12 +1,15 @@
 ---
 title: Etymology of Suffixes
-date: 2017-03-02 03:50:00 Z
+date: 2017-03-02 03:50:00 -05:00
+published: true
+layout: post
+author: Tucker Sylvia
+mathjax: false
+description: "Short rabbit hole concerning grammatical oddities of suffixes"
 tags:
 - writing
 - random
 - etymology
-layout: post
-author: Tucker Sylvia
 ---
 
 ### Learn Something New Everyday!

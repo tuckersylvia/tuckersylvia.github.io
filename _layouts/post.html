@@ -2,24 +2,48 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
-<hr>
-{% include read_time.html %}
+<section>
+<h1>{{ page.title }}</h1>
+
+<h3>{% if page.author %} by {{ page.author }}{% endif %}</h3>
+
+<time>{{ page.date | date: "%A %B %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+
+<p>{% include read_time.html %}</p>
+
+Tags:
+{% for tag in page.tags %}
+	<a href="#{{ tag | slugify }}"> {{ tag }}, </a>
+{% endfor %}
+
+</section>
+
 <hr>
 
+<article>
 {{ content }}
+</article>
+
+<hr>
 
 <!--
 adding a last edited field
 -->
+<!--
+this way works great but disabled by gh pages because uses custom plugin / hooks
 Post Edited: {{ page.last-modified-date | date: '%B %d, %Y' }}
+-->
 
-<hr>
+<!--
+moved this into footer layout as page generated time
+Last ~~modified~~ *built* at: {{ site.time | date: '%B %-d, %Y' }}
+-->
+
+<section>
 <!--
 adding related posts links, should do in an includes probably
 -->
-<h2>Related Posts:</h2>
+<h3>Related Posts:</h3>
 
 <ul class="related_posts">
   {% for post in site.related_posts limit: 3 %}
@@ -27,16 +51,18 @@ adding related posts links, should do in an includes probably
   {% endfor %}
 </ul>
 
-<hr>
 <!--
 adding prev and next navigation links, should do in an includes probably
 -->
 <nav class="post_navigation">
   {% if page.previous.url %}
-    <a style="float: left" href="{{ page.previous.url }}">&laquo; Previous Post </a>
+    <a style="float: left" href="{{ page.previous.url }}"> &laquo; Previous Post &laquo; </a>
   {% endif %}
   {% if page.next.url %}
-    <a style="float: right" href="{{ page.next.url }}">Next Post &raquo; </a>
+    <a style="float: right" href="{{ page.next.url }}"> &raquo; Next Post &raquo; </a>
   {% endif %}
+
 </nav>
+
 <hr>
+</section>

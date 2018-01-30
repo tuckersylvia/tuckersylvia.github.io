@@ -1,16 +1,19 @@
 ---
 title: Radius Volume Relationships of Spheres
-date: 2017-03-23 03:50:00 Z
-tags:
-- math
-- random
-- Stokes
-- physics
-- scaling
-- science
+date: 2017-03-23T08:50:00.000Z
+published: true
 layout: post
 author: Tucker Sylvia
 mathjax: true
+description: Short and sweet mathematical exploration into spherical properties
+tags:
+  - math
+  - random
+  - Stokes
+  - physics
+  - scaling
+  - science
+  - writing
 ---
 
 ### Reminder: You should still be learning something new everyday!
