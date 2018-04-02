@@ -3,9 +3,7 @@ layout: post
 title: Satellite Science FTW
 date: '2018-01-30 15:28'
 author: Tucker Sylvia
-description: >-
-  Beautiful satellite imagery showcases ROI for investing in scientific
-  infrastructure
+description: "Beautiful satellite imagery showcases ROI for investing in scientific infrastructure"
 mathjax: true
 published: true
 tags:
@@ -49,3 +47,5 @@ I chose to write a little blurb about this photo because to me it showcases the 
 A fundamental misunderstanding is that these very expensive and highly precise instruments are *just* taking pictures, but they do much more than that. For instance, the [Sentinel-2](https://en.wikipedia.org/wiki/Sentinel-2) pair of satellites measure in 13 frequency bands spanning the visible and infrared parts of the EM spectrum. The main purpose of this mission is monitoring land use and vegetation changes, but obviously the data, which happens to be free and open, can be utilized by creative scientists to solve a much more expansive set of problems, as this image demonstrates.
 
 Observations lay the foundation for improving our understanding of our environment, and it's imperative that we continue to invest in basic research and observational infrastructure. In addition to the above Yukon photo, I have recently read two other articles and listened to a podcast all touching on this topic and inspiring me. One was another satellite story, and [a very cool one at that](https://sattrackcam.blogspot.com/2017/12/where-to-hide-your-nuclear-missile.html), using open data to explore the coverage of current operational missile detection satellites. [The other](https://www.nature.com/articles/d41586-017-08967-y) points out that a pretty small initial investment in an integrated whole-Earth monitoring network could provide substantial scientific and societal benefits. Planet Money did a series of episodes on [launching their own cubesat](https://www.npr.org/sections/money/2017/12/01/567267573/planet-money-goes-to-space). The entrirety of our present knowledge of natural laws and modern technological advancement is rooted in the findings of generations of inquisitive minds who actively observed the world around them. Now is the time to give back to ourselves and the international scientific community by rejuvenating public interest in funding basic research infrastructure and highlighting the services and concrete outcomes we all benefit from.
+
+*EDIT 1/31/18 - Satellites are becoming an oddly common theme, [here is another interesting post](https://skyriddles.wordpress.com/2018/01/21/nasas-long-dead-image-satellite-is-alive/) I just read about a guy who looks for satellites, and just found a [lost NASA probe called IMAGE](https://www.nasa.gov/feature/goddard/2018/nasa-image-confirmed). Pretty Neat.*

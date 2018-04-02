@@ -4,34 +4,45 @@
 # Infrastructure
 # things to fix/build
 ##################
+#!
+#! remember to uncomment Gemfile lines for offline use
+#!
+###
+# maintenence
+#! run trimage
+###
 
-# pages
-resume/cv page
-projects page
-404
+#######
+# Pages
+# ** add all of these to nav as they are created if appropriate **
+#######
 
-# about
+# resume/cv page
+convert cv / resumes to markdown for easier publishign and formatting options?
+
+# projects page
+
+# goods and services page (scientific consulting, equipment development, teaching and curriculum, 3d printing, programming)
+
+# about page
 better social on about page
-add linkdin
 reserachgate?
 
-# blog
-build a blog page by date
-build a blog page by tags
+# blog page
 
 # nav
 make blog pages sub-pages of blog in nav bar
 add sub-pages to nav bar
+add projects page to nav bar
 
 # header /footer
 meta tags header
 social footer
 header images
 floating / permanent header
-
+disappears on portrait mobile less than 480 px wide
 
 # post layout
-blog tags in post layout, nicely styled
 social share
 
 # standardization
@@ -40,9 +51,9 @@ sitemap.xml
 robots.txt
 security.txt
 rss feed.xml
+responsive header /hamburger menu for mobile
 
-# maintenence
-run trimage
+
 
 #########
 # POSTS
@@ -51,15 +62,21 @@ run trimage
 blob track
 subduction apparatus
 RZR
-openptv?
+openptv? streams? other PIV/tracking, trackpy
 3d printed something / fix
 saab fix
 2dheatpy
 educational passages
 sailng something
+magnetinc boats design/print
+actuator wiring
 writing
 oped on something
 python game agent project
 new projector
 build something
 kenz wave ring
+book reviews
+more printing stories trick tips mods
+book review mote in gods eye series
+book revies art and science of sails

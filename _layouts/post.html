@@ -12,8 +12,9 @@ layout: default
 <p>{% include read_time.html %}</p>
 
 Tags:
+
 {% for tag in page.tags %}
-	<a href="#{{ tag | slugify }}"> {{ tag }}, </a>
+	<a href="#{{ tag | slugify }}"> {{ tag }} | </a>
 {% endfor %}
 
 </section>
