@@ -11,3 +11,7 @@ gem 'jekyll-watch'
 gem 'jekyll-theme-midnight'
 
 gem 'jekyll-sitemap'
+
+gem 'jekyll-feed'
+
+gem 'jekyll-seo-tag'

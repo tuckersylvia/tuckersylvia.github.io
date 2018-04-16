@@ -9,7 +9,7 @@
 #!
 ###
 # maintenence
-#! run trimage
+#! run trimage -d
 ###
 
 #######
@@ -36,7 +36,6 @@ add sub-pages to nav bar
 add projects page to nav bar
 
 # header /footer
-meta tags header
 social footer
 header images
 floating / permanent header
@@ -46,13 +45,14 @@ disappears on portrait mobile less than 480 px wide
 social share
 
 # standardization
-favicon.ico
-sitemap.xml
-robots.txt
-security.txt
-rss feed.xml
+favicon.ico # done, .ico in root w/ 16 and 32 px in one file, more in icons, added links to head
+sitemap.xml # done using jekyll-sitemap, should be GHP comliant, submitted to google
+robots.txt # done and submitted to google
+security.txt # maybe soon...
+rss feed.xml # using jekyll-feed, should be GHP compliant
 responsive header /hamburger menu for mobile
-
+jekyll-seo-tag - use this plugin to replace social-meta includes in head
+get script out of head / bury in footer?
 
 
 #########

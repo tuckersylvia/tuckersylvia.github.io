@@ -1,0 +1,2 @@
+{% capture assetPath %}/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+<a href="{{ assetPath }}">{{ include.name}}</a>

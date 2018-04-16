@@ -27,7 +27,26 @@ description: 'My personnal space on the web to blog about problems I solve and o
 baseurl: ''
 url: http://tuckersylvia.com
 github_username: tuckersylvia
-twitter_username: pr0ception
+twitter_username: proceptionable
+
+twitter:
+  username: proceptionable
+
+facebook:
+  publisher: https://www.facebook.com/tucker.sylvia
+
+logo: /assets/icons/favicomatic/favicon-128.printing
+
+social:
+  name: Tucker sylvia
+  links:
+    - https://twitter.com/proceptionable
+    - https://www.facebook.com/tucker.Sylvia
+    - https://www.linkedin.com/in/tucker-sylvia
+    - https://github.com/tuckersylvia
+
+webmaster_verification:
+  google: 0MMhBP5h0X5Bo6_bZmMJrBk_AQmVr8z7-ZgXg7BkazI
 
 repository: tuckersylvia/tuckersylvia.github.io
 theme: jekyll-theme-midnight
@@ -42,6 +61,8 @@ include:
 
 exclude:
 - TODO.txt
+- Gemfile
+- Gemfile.lock
 
 keep_files:
 
@@ -50,4 +71,6 @@ kramdown:
   input: GFM
 
 plugins:
+- jekyll-feed
 - jekyll-sitemap
+- jekyll-seo-tag

@@ -17,4 +17,4 @@ Twitter: [@proceptionable](https://twitter.com/proceptionable "Twitter Profile")
 
 Facebook: [tucker.sylvia](https://www.facebook.com/tucker.sylvia "Facebook Timeline")
 
-LinkedIn: [Tucker Sylvia](www.linkedin.com/in/tucker-sylvia "LinkedIn Profile")
+LinkedIn: [Tucker Sylvia](https://www.linkedin.com/in/tucker-sylvia "LinkedIn Profile")

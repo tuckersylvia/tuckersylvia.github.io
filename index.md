@@ -16,4 +16,4 @@ layout: default
 
 ---
 
-Here you should find some [blog posts](/blog/) and pages describing projects and other information I feel is worth writing about. There will certainly be some skeletons and scaffolding in place of planned pages. This site will probably be in a constant state of flux as I have a hard time resisting the urge to tweak endlessly.
+Here you should find some [blog posts](/blog/posts) and pages describing projects and other information I feel is worth writing about. There will certainly be some skeletons and scaffolding in place of planned pages. This site will probably be in a constant state of flux as I have a hard time resisting the urge to tweak endlessly.

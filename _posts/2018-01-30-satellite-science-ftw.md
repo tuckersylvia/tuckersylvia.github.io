@@ -4,7 +4,7 @@ title: Satellite Science FTW
 date: '2018-01-30 15:28'
 author: Tucker Sylvia
 description: "Beautiful satellite imagery showcases ROI for investing in scientific infrastructure"
-mathjax: true
+mathjax: false
 published: true
 tags:
   - science

@@ -3,5 +3,7 @@
 
 User-agent: *
 Disallow: /assets/
+Allow: /assets/docs/
+Allow: /assets/posts/
 Disallow:/_pages/
 Sitemap: {{ site.url }}/sitemap.xml
