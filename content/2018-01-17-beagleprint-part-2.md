@@ -1,21 +1,10 @@
----
-title: Beagleprint Part 2
-date: 2018-01-17 14:50:00 -05:00
-published: true
-layout: post
-author: Tucker Sylvia
-mathjax: false
-description: "Explanation of software for Octoprint server"
-tags:
-- 3dprinting
-- beaglebone
-- octoprint
-- server
-- software
-- linux
-- hobby
-- networking
----
+Title: Beagleprint Part 2
+Date: 2018-01-17 14:50:00 -05:00
+Author: Tucker Sylvia
+Status: published
+Tags: 3dprinting, beaglebone, octoprint, server, software, linux, hobby, networking
+Mathjax: false
+Description: Explanation of software for Octoprint server
 
 ### Because one must have network control...
 

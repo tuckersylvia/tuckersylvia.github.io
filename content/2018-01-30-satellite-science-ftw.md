@@ -1,20 +1,10 @@
----
-layout: post
-title: Satellite Science FTW
-date: '2018-01-30 15:28'
-author: Tucker Sylvia
-description: "Beautiful satellite imagery showcases ROI for investing in scientific infrastructure"
-mathjax: false
-published: true
-tags:
-  - science
-  - writing
-  - random
-  - geology
-  - oceanography
-  - satellites
-  - remote sensing
----
+Title: Satellite Science FTW
+Date: 2018-01-30 15:28
+Author: Tucker Sylvia
+Status: published
+Tags: science, writing, random, geology, oceanography, satellites, remote sensing
+Description: Beautiful satellite imagery showcases ROI for investing in scientific infrastructure
+Mathjax: false
 
 ### In the modern technological era dominated by big-data and the surveilance state, scientific measurements are still surprisingly sparse in space and time.
 

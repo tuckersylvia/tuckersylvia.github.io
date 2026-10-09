@@ -1,3 +1,19 @@
-_site/
-.sass-cache/
-.jekyll-metadata
+# Pelican local build outputs and caching layers
+output/
+cache/
+
+# Python virtual environments
+venv/
+ENV/
+.venv/
+
+# Python bytecode and runtime artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local configuration overrides or history logs
+.pytest_cache/
+.pelicanhtml.cache
+
