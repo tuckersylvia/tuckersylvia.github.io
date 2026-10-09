@@ -1,6 +1,6 @@
 AUTHOR = 'Tucker Sylvia'
 SITENAME = 'Proceptive Insights'
-SITEURL = ''
+SITEURL = 'https://tuckersylvia.com'
 
 PATH = 'content'
 
@@ -11,6 +11,14 @@ DEFAULT_LANG = 'en'
 # URL settings to match old Jekyll permalinks
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+# Tell Pelican to look for extra files in a "extra" folder
+STATIC_PATHS = ['images', 'extra/CNAME']
+
+# Tell Pelican where to drop the CNAME file in the output directory tree
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+}
 
 # Clean up categorization paths if necessary (Jekyll defaults)
 CATEGORY_URL = 'category/{slug}/'
