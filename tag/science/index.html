@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Proceptive Insights - science</title>
+        <link rel="stylesheet" href="https://tuckersylvia.com/theme/css/main.css" />
+        <link href="https://tuckersylvia.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Proceptive Insights Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://tuckersylvia.com/">Proceptive Insights</a></h1>
+                <nav><ul>
+                    <li><a href="https://tuckersylvia.com/category/misc/">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://tuckersylvia.com/2019/10/05/3d-printed-bathymetric-charts-for-the-visually-impaired/">3D Printed Bathymetric Charts for the Visually Impaired</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2019-10-05T08:46:00-04:00">
+                Published: Sat 05 October 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://tuckersylvia.com/author/tucker-sylvia.html">Tucker Sylvia</a>
+        </address>
+<p>In <a href="https://tuckersylvia.com/category/misc/">misc</a>.</p>
+<p>tags: <a href="https://tuckersylvia.com/tag/science/">science</a> <a href="https://tuckersylvia.com/tag/python/">python</a> <a href="https://tuckersylvia.com/tag/programming/">programming</a> <a href="https://tuckersylvia.com/tag/image-processing/">image processing</a> <a href="https://tuckersylvia.com/tag/3dprinting/">3dprinting</a> </p>
+</footer><!-- /.post-info --><h3>Harnessing open source software and 3D printing technologies to create adaptive solutions for impaired and disabled communities.</h3>
+<p>{% include image.html name="matt-map.png" caption="Example of a 3D printed bathymetric chart of lower East Passage of Narragansett Bay" alt="3D Bathymetry" width="85%" %}</p>
+<hr>
+<h2>A 3D picture is worth way more than a thousand words</h2>
+<p>First post in a long while, but it only took a few minutes to remember the necessary commands needed to get the site up to date and create content. There's something to be said for that kind of simplicity and I should document more about how this site works in future posts. Anyway...</p>
+<h3>First, some context:</h3>
+<p>I should start by stating that I have lived on an island for my entire life and always actively participated in water sports and appreciated my close proximity to the ocean. In fact, I consider this a dominant factor shaping how and why I have gotten to where I am and decisions I have made along the way.</p>
+<p>I began sailing when I was 8 (somewhat begrudgingly which is hard to fathom now, 20 years later...) and that has continued to be my main sport and summer (and sometimes winter) activity. The summer before college was my first year as a sailing instructor, and I have worked for an adaptive sailing program, <a href="https://sailtoprevail.org/">Sail to Prevail</a> for 4-5 years in Newport and Nantucket, as well as <a href="https://sailnewport.org/">Sail Newport</a>, and additionally coach a high school sailing team. I have been pretty involved in sailing instruction for the past decade, which is part of how this whole project came to be, because this is how I met Matt.</p>
+<p>I met Matt 2 or 3 years ago because he wanted to work on short-handed spinnaker sailing to prepare for his summer racing circuit. We would go out double-handed and do half day practices periodically. During one of our practice sessions he asked for clarification about the bathymetry where we sailed and its impact on surface current. The challenging part of coming up with an explanation was that Matt is blind, so he cannot read a typical chart. This was when it became clear that I could probably print a tactile chart for Matt on my 3D printer, a project that became a fantastic culmination of a few different passions of mine... hacking and tinkering, sailing and oceanography, teaching, and I was inspired.</p>
+<ul>
+<li>I wrote <a href="https://www.facebook.com/mattchaoblindsailor/posts/528277534246734?__tn__=K-R">another piece</a> about sailing with Matt you can find on his Facebook page.</li>
+</ul>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmattchaoblindsailor%2Fposts%2F528277534246734&width=500" width="500" height="198" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<hr>
+<h3>Back to the actual story:</h3>
+<p>So, that was a long intro but it frames the rest of the struggle nicely. Initially I did not think that this would be all that challenging. There is a plethora of free and open bathymetry data out there and I assumed someone had come up with slick way to transform various digital elevation model formats into an STL that could then be sliced and printed. I had attempted this once before in grad school when I first got my printer because I thought we could make some neat teaching aids for a set of courses being designed to expose more non-STEM undergraduates to ocean data science. I was unsuccessful then, but now a few years had passed and surely there was an easy way to get this done...</p>
+<p>The final solution ended up requiring multiple steps using an interesting combination of some cool software:
+  * python - common between most of the below mentioned tools
+    - pyGDAL
+    - pyNetCDF4
+    - NumPy
+    - MatPlotLib
+  * <a href="https://qgis.org/en/site/">QGIS</a> - FOSS GIS package with a ton of functionality
+  * <a href="https://github.com/ChHarding/TouchTerrain_for_CAGEO">TouchTerrain</a> - converts GeoTIFF to STL
+  * Cura - still my slicer of choice</p>
+<h4>Get Data:</h4>
+<p>I obtained gridded bathymetry data from <a href="http://www.narrbay.org/physical_data.htm">NarrBay.org</a> which has a ton of data for the bay. I searched <a href="https://www.rigis.org/datasets/bathymetric-depth-contours-for-narragansett-bay">RIGIS</a> and <a href="https://data.noaa.gov/dataset/dataset/narragansett-bay-ri-m020-bathymetric-digital-elevation-model-30-meter-resolution-derived-from-s">NOAA</a> but could not find exactly what I thought I needed. Your mileage may vary for your region of choice. The zip contained an <em>*.e00</em> file, which I had never run across, so more Google Fu required. Apparently, it's an old ArcInfo raster format and there are web services that will convert it to whatever you want, but the file was too big to use those for free.</p>
+<h4>Massage Data:</h4>
+<p>It took me another couple of tries to figure out how to read and manipulate the <em><em>.e00_ raster file. First I tried QGIS, a very powerful and complete GIS solution with scripting interfaces and a bunch of plugins, and I really don't understand all that it's capable of, but it sort of worked for my task. I was able to open the _</em>.e00</em> file which is a gridded raster of the bathymetry with NaN's for land (actually represented as the minimum value of a signed 32 bit integer). This is one area where I wanted to improve in future revisions because all the land masses and islands are presented as holes, which Matt said was somewhat unintuitive. After more Googling and exploring menus I figured out how to crop a region from the entire file and directly export it as a GeoTIFF. I tried changing the NaN / nodata regions a multitude of wys using the built-in raster calculator and transforming to a different layer with a new nodata value but could not get an array that worked correctly.</p>
+<p>The next stage in the solution was to read and manipulate the data directly with python which actually turned out to work really well. GDAL can open the weird raster format as well as GeoTiff's of various regions I had exported from QGIS, and I found a NetCDF of the data from NOAA that was way easier for me to work with because I use that format regularly. I was able to slice an ROI from a NumPY array, mask the NaN's and change their value to whatever I wanted and dump the array back to the disk as a GeoTIFF in less than 20 lines in a notebook. I sould have known this was the right solution from the beginning. Now I just had to turn my DEM raster into something printable.</p>
+<h4>DEM --&gt; STL:</h4>
+<p>I attempted to use a plugin called <a href="https://demto3d.com/en/">DEMto3D</a> but was unable to get it to work properly. Next came <a href="http://blog.touchterrain.org/">TouchTerrain</a> from the  <a href="https://franek.public.iastate.edu/gfl/gfl.html">GeoFabLab</a> at Iowa State, <a href="https://www.sciencedirect.com/science/article/pii/S0098300416304824?via%3Dihub">here is the paper they wrote about it</a>. I had used the TouchTerrain <a href="https://touchterrain.geol.iastate.edu">web interface</a> in the past to print a model of <a href="https://en.wikipedia.org/wiki/Mount_Katahdin">Mt. Katahdin</a> but was unable to get it to work for negative topography because of the USGS DEM they use. As of the 2.0 release the developers also provide a standalone python version that you can get from <a href="https://github.com/ChHarding/TouchTerrain_for_CAGEO">their GitHub page</a> to run on your own data. This works perfectly and yields a binary (or ASCII) STL that you can then feed to your slicer of choice.</p>
+<h3>Print!</h3>
+<p>The results were impressive and I can't wait to create more of these!</p>
+<p>{% include image.html name="firstLayer.jpg" caption="First layer of test print, looking promising." alt="First layer printing." width="85%" %}</p>
+<p>{% include image.html name="baseLayers.jpg" caption="All base layers nearly completed, good quality so far." alt="Base layers done printing." width="85%" %}</p>
+<p>{% include image.html name="midProgress.jpg" caption="About half-way through the print, which was mostly infill so far, only a few deep regions filled in." alt="Mid-way print progress." width="85%" %}</p>
+<p>{% include image.html name="finalProduct.jpg" caption="The final product, a 3x vertically exaggerated model of the lower east passsage of Narragansett Bay." alt="Final product." width="85%" %}</p>
+<hr>
+<p>Hopefully this post gave some information to those out there looking for ways to 3D print representations of digital elevation models for whatever purpose. For me, these types of models represent valuable teaching aids and provide a fantastic mechanism for assisting visually impaired people with understanding the world around them.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://tuckersylvia.com/2018/04/16/i-wrote-a-blob-tracker/" rel="bookmark"
+                           title="Permalink to I Wrote a Blob Tracker">I Wrote a Blob Tracker</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-04-16T15:44:00-04:00">
+                Published: Mon 16 April 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://tuckersylvia.com/author/tucker-sylvia.html">Tucker Sylvia</a>
+        </address>
+<p>In <a href="https://tuckersylvia.com/category/misc/">misc</a>.</p>
+<p>tags: <a href="https://tuckersylvia.com/tag/science/">science</a> <a href="https://tuckersylvia.com/tag/python/">python</a> <a href="https://tuckersylvia.com/tag/programming/">programming</a> <a href="https://tuckersylvia.com/tag/opencv/">opencv</a> <a href="https://tuckersylvia.com/tag/image-processing/">image processing</a> </p>
+</footer><!-- /.post-info -->                <h3>Open source software helps students and researchers solve unique problems and construct purpose-built solutions.</h3>
+<p>{% include image.html name="programming.png" caption="Lenna is a staple test image within the computational image processing community." alt="Lenna" width="85%" %}</p>
+<hr>
+<h2>A picture is worth at least thousand words</h2>
+<p>Throughout the course of my …</p>
+                <a class="readmore" href="https://tuckersylvia.com/2018/04/16/i-wrote-a-blob-tracker/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://tuckersylvia.com/2018/01/30/satellite-science-ftw/" rel="bookmark"
+                           title="Permalink to Satellite Science FTW">Satellite Science FTW</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-30T15:28:00-05:00">
+                Published: Tue 30 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://tuckersylvia.com/author/tucker-sylvia.html">Tucker Sylvia</a>
+        </address>
+<p>In <a href="https://tuckersylvia.com/category/misc/">misc</a>.</p>
+<p>tags: <a href="https://tuckersylvia.com/tag/science/">science</a> <a href="https://tuckersylvia.com/tag/writing/">writing</a> <a href="https://tuckersylvia.com/tag/random/">random</a> <a href="https://tuckersylvia.com/tag/geology/">geology</a> <a href="https://tuckersylvia.com/tag/oceanography/">oceanography</a> <a href="https://tuckersylvia.com/tag/satellites/">satellites</a> <a href="https://tuckersylvia.com/tag/remote-sensing/">remote sensing</a> </p>
+</footer><!-- /.post-info -->                <h3>In the modern technological era dominated by big-data and the surveilance state, scientific measurements are still surprisingly sparse in space and time.</h3>
+<p>{% include image.html name="imageyukonde.jpg" caption="Remote sensing and satellite observations are changing the landscape of modern science for the better." alt="Sentinel-2 image of Yukon River …</p>
+                <a class="readmore" href="https://tuckersylvia.com/2018/01/30/satellite-science-ftw/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://tuckersylvia.com/2017/03/23/radius-volume-relationships-of-spheres/" rel="bookmark"
+                           title="Permalink to Radius Volume Relationships of Spheres">Radius Volume Relationships of Spheres</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-03-23T08:50:00-04:00">
+                Published: Thu 23 March 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://tuckersylvia.com/author/tucker-sylvia.html">Tucker Sylvia</a>
+        </address>
+<p>In <a href="https://tuckersylvia.com/category/misc/">misc</a>.</p>
+<p>tags: <a href="https://tuckersylvia.com/tag/math/">math</a> <a href="https://tuckersylvia.com/tag/random/">random</a> <a href="https://tuckersylvia.com/tag/stokes/">Stokes</a> <a href="https://tuckersylvia.com/tag/physics/">physics</a> <a href="https://tuckersylvia.com/tag/scaling/">scaling</a> <a href="https://tuckersylvia.com/tag/science/">science</a> <a href="https://tuckersylvia.com/tag/writing/">writing</a> </p>
+</footer><!-- /.post-info -->                <h3>Reminder: You should still be learning something new everyday!</h3>
+<p>So I had a fairly simple question while writing my thesis the other day. I was writing about Stokes rise and buoyant settling / ascent of spherical bodies in a viscous fluid. I wanted to know what the change in terminal velocity …</p>
+                <a class="readmore" href="https://tuckersylvia.com/2017/03/23/radius-volume-relationships-of-spheres/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://tuckersylvia.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

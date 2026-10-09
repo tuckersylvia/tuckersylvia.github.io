@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Proceptive Insights - math</title>
+        <link rel="stylesheet" href="https://tuckersylvia.com/theme/css/main.css" />
+        <link href="https://tuckersylvia.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Proceptive Insights Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://tuckersylvia.com/">Proceptive Insights</a></h1>
+                <nav><ul>
+                    <li><a href="https://tuckersylvia.com/category/misc/">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://tuckersylvia.com/2017/03/23/radius-volume-relationships-of-spheres/">Radius Volume Relationships of Spheres</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-03-23T08:50:00-04:00">
+                Published: Thu 23 March 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://tuckersylvia.com/author/tucker-sylvia.html">Tucker Sylvia</a>
+        </address>
+<p>In <a href="https://tuckersylvia.com/category/misc/">misc</a>.</p>
+<p>tags: <a href="https://tuckersylvia.com/tag/math/">math</a> <a href="https://tuckersylvia.com/tag/random/">random</a> <a href="https://tuckersylvia.com/tag/stokes/">Stokes</a> <a href="https://tuckersylvia.com/tag/physics/">physics</a> <a href="https://tuckersylvia.com/tag/scaling/">scaling</a> <a href="https://tuckersylvia.com/tag/science/">science</a> <a href="https://tuckersylvia.com/tag/writing/">writing</a> </p>
+</footer><!-- /.post-info --><h3>Reminder: You should still be learning something new everyday!</h3>
+<p>So I had a fairly simple question while writing my thesis the other day. I was writing about Stokes rise and buoyant settling / ascent of spherical bodies in a viscous fluid. I wanted to know what the change in terminal velocity was if you doubled the spheres volume keeping all other parameters (density contrast, ambient viscosity) constant. Below I will show you the simple relationships and assumptions I used to get an estimate for this quantity. Along the way we will touch on what I think has been the most valuable skill I have learned in my time at graduate school: <strong>estimation and back of the envelope calculations</strong>.</p>
+<p>If you can reasonably estimate characteristic properties of whatever problem or system is concerning you then you can say a lot about it in a very robust way. Sure, you may not encompass all the details at all scales but you will definitely be able to make reasonable estimates and assertions. Sometimes you will hear this practice referred to as <em>scaling arguments, dimensional analysis, or nondimensionalization</em>. This is actually what differentiates most disciplines concerned with studying dynamical systems: the assumptions we make and scalings we choose define the simplifications we can make to our equations, which for most practical purposes start out the same (or are at least constructed from the same building blocks).</p>
+<p>My masters research has focused on subduction zone geodynamics, specifically physical-tectonic-fluid dynamic analogue laboratory modeling of the viscously creeping <a href="https://en.wikipedia.org/wiki/Mantle_wedge">mantle wedge</a>. This project has led me down quite a few rabbit holes over the past three years and I have learned a lot of little tidbits along the way from a range of seemingly disparate fields: geology and geophysics, numerical methods and computational simulation, image processing and computer vision, electrical and mechanical engineering, differential equations and linear algebra, computer science and programming, and more. I wish I could fit all of it onto my CV but it would be <em>wicked</em> long.</p>
+<p>(For the uninitiated, <em>wicked</em> is a term of endearment where I'm from in Rhode Island, the smallest of the United States. The best things in life are <em>wicked awesome</em>, like <a href="https://en.wikipedia.org/wiki/Del's">Del's</a> frozen lemonade and coffee <a href="https://www.google.com/search?q=awful+awful&amp;oq=awful+a&amp;aqs=chrome.0.0j69i57j0l4.1897j0j7&amp;sourceid=chrome&amp;ie=UTF-8">Awful Awful's</a>.)</p>
+<h3>Volume of a sphere:</h3>
+<p>Back to our scheduled programming, I needed to take a break from writing and figure out this problem.
+The volume of a sphere is defined as:</p>
+<p>$$ V = \frac{4}{3} \pi r^3 $$</p>
+<p>We can rearrange this to calculate the radius from a known volume:</p>
+<p>$$ r = \sqrt[3]{\frac{3}{4\pi} V} $$</p>
+<p>Using a unit volume of Unity and doubling it we can calculate two <em>dimensionless</em> (kinda) radii to use in calculating a  scaling factor:</p>
+<p>$$ r_1 = \sqrt[3]{\frac{3}{4\pi} (1)} = \frac{\sqrt[3]{\frac{3}{\pi}}}{2^{2/3}} \approx 0.620 $$</p>
+<p>$$ r_2 = \sqrt[3]{\frac{3}{4\pi} (2)} = \sqrt[3]{\frac{3}{2\pi}} \approx 0.782 $$</p>
+<p>Taking the ratio of those two yields a nice scaling factor:</p>
+<p>$$ \frac{\sqrt[3]{\frac{3}{2\pi}}} {\frac{\sqrt[3]{\frac{3}{\pi}}}{2^{2/3}}} = \sqrt[3]{2} \approx 1.26 $$</p>
+<p>Or in other words, a ~26% increase in radius for a doubling in volume.</p>
+<p>This is a nice relationship to know in general for the future. It allows us to guestimate a radius from a volume <em>change</em> and not have to explicitly calculate it from known volume.</p>
+<p>Another, probably more refined approach in contrast with the <em>plug-and-chug</em> method used above would be to rearrange the volume equation as we did above to get a function for radius r as a function of V, r(V). Then just take the derivative to get r(V)' or dr/dV, the change in radius with respect to a change in volume. This would give us a more generic function to explore other specific volume changes besides doubling. I should probably do that and plot it below...<strong>TODO</strong></p>
+<h3>Stokes Law:</h3>
+<p>Now that we know how much the radius will change for a doubling of volume we need to know what affect that will have on the Stokes terminal velocity.</p>
+<p>Stokes law for the terminal velocity of a spherical body sinking or falling through a fluid is defined by the balance of the gravitational forces with the buoyancy and drag forces: <strong>Fg = Fb + Fd</strong>. A few nice breakdown articles can be found at the <a href="http://scienceworld.wolfram.com/physics/StokesVelocity.html">World of Physics</a> and <a href="https://en.wikipedia.org/wiki/Stokes%27_law#Terminal_velocity_of_sphere_falling_in_a_fluid">WikiPedia</a>. The end result after some rearranging for terminal velocity is:</p>
+<p>$$ v_t = \frac{2}{9} \frac{g(\rho^{'} - \rho) r^2}{\eta} $$</p>
+<p>If we assume that the density contrast and matrix viscosity remain constant we can use the same <em>plug and chug</em> approach as before substituting in Unity and 1.26 for values of the radius.</p>
+<p>$$  C = \frac{2}{9} \frac{g(\rho^{'} - \rho)}{\eta} = constant $$</p>
+<p>$$ v_1 = C (1)^2 = C $$</p>
+<p>$$ v_{1.26} = C (1.26)^2 \approx 1.59 C $$</p>
+<p>This shows that there is a ~59% increase in the terminal Stokes velocity for a sphere with double the volume in the same fluid environment. Pretty neat.</p>
+<h3>Closing remarks:</h3>
+<p>Well, there was not really any traditional scaling analysis here but you can hopefully still see how <em>nondimensionalization</em> (in my very broad sense) can be utilized to gain insight into all kinds of problems.</p>
+<p>We have also learned that if you let two balloons go at the same time and one contains twice the volume of helium it will ascend 60% faster than the smaller one when they reach their respective terminal velocities. The larger balloon would also accelerate faster and get to terminal velocity more quickly too, but that is not part of this story... yet. If you get in a balloon race any time soon you now know how to win.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://tuckersylvia.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
