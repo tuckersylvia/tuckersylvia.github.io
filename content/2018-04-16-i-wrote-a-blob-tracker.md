@@ -1,18 +1,10 @@
----
-title: I Wrote a Blob Tracker
-date: '2018-04-16 15:44'
-published: true
-layout: post
-author: Tucker Sylvia
-mathjax: false
-description: I wrote a simple blob tracker in Python using OpenCV
-tags:
-  - science
-  - python
-  - programming
-  - opencv
-  - image processing
----
+Title: I Wrote a Blob Tracker
+Date: 2018-04-16 15:44
+Author: Tucker Sylvia
+Status: published
+Tags: science, python, programming, opencv, image processing
+Mathjax: false
+Description: I wrote a simple blob tracker in Python using OpenCV
 
 ### Open source software helps students and researchers solve unique problems and construct purpose-built solutions.
 

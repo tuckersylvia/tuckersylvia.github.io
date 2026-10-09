@@ -1,18 +1,10 @@
----
-title: 3D Printed Bathymetric Charts for the Visually Impaired
-date: '2019-10-05 08:46'
-published: true
-layout: post
-author: Tucker Sylvia
-mathjax: false
-description: Helping a blind sailor "visualize" depth and currents
-tags:
-  - science
-  - python
-  - programming
-  - image processing
-  - 3dprinting
----
+Title: 3D Printed Bathymetric Charts for the Visually Impaired
+Date: 2019-10-05 08:46
+Author: Tucker Sylvia
+Status: published
+Tags: science, python, programming, image processing, 3dprinting
+Mathjax: false
+Description: Helping a blind sailor "visualize" depth and currents
 
 ### Harnessing open source software and 3D printing technologies to create adaptive solutions for impaired and disabled communities.
 
